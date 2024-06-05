@@ -1,0 +1,1619 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #001220;  
+  background-position: center;
+  background-size: cover;
+
+  
+}
+
+
+body::-webkit-scrollbar{
+  width: 0.5rem;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color:#001220;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(255, 255, 255); /* Set a background color */
+  color: #001220; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: #c5c5c5;
+  transition: all 0.3s;
+}
+
+
+.hide{
+  background-color: #001220;
+  overflow: hidden;
+}
+
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.hide2{
+  background-color: #001220;
+  overflow: hidden;
+}
+
+.hide2 span{
+  transform: translateX(-100%);
+  display: inline-block;
+}
+
+.home_titles{
+  margin-left: 8.3%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5vw;
+  
+}
+
+.title{
+  font-size: 2.4vw;
+  color: white;
+  position: relative;
+  align-items: center;
+  
+  
+}
+
+.baseline{
+  font-size: 1vw;
+  margin-top: 10px;
+  display: inline-block;
+  flex-direction: row;
+  position: relative;
+  color: #df0228;
+}
+
+.automotive{
+  background-color: #a0001b;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.careers{
+  height: 150vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrer_title{
+  font-size: 5vw;
+  color: white;
+  position: relative;
+  
+}
+
+.carrer_baseline{
+  font-size: 2vw;
+  color: #ffffff;
+  width: 30vw;
+  position: relative;
+  margin-bottom: 40px;
+  
+}
+
+.carrer_baseline2{
+  font-size: 1vw;
+  color: #ffffff;
+  width: 35vw;
+  position: relative;
+  
+  
+}
+
+.carrer_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -20vw;
+}
+
+.careers_icons{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-size: 3vw;
+  position: relative;
+  margin-top: 100px;
+  
+  
+}
+
+.fa-user-graduate{
+  padding-right: 10vw;
+}
+
+.fa-money-bill-wave{
+  padding-right: 10vw;
+}
+
+.careers_icons_title{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  position: relative;
+  margin-top: 20px;
+  font-size: 0.9vw;
+  
+}
+
+.fa-user-graduate_title{
+  position: relative;
+  left: 2.5vw;
+}
+
+
+
+.fa-money-bill-wave_title{
+  position: relative;
+  left: 21.5vw;
+}
+
+
+.fa-gift_title{
+  position: relative;
+  left: -0.5vw;
+}
+
+.automotive_title{
+  font-size: 6vw;
+  color: white;
+  position: relative;
+  top: -130px;
+  
+ 
+}
+
+.automotive_baseline{
+  font-size: 1.1vw;
+  color: #ffffff;
+  width: 30vw;
+  position: relative;
+  top: -135px;
+  
+}
+
+.automotive_icons{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-size: 3.5vw;
+  
+} 
+
+
+.fa-tools{
+  padding-right: 10vw;
+}
+
+.fa-wind{
+  padding-right: 10vw;
+}
+
+.fa-subway{
+  padding-right: 10vw;
+}
+
+
+.automotive_icons_title{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  position: relative;
+  margin-top: 20px;
+  font-size: 0.9vw;
+}
+
+.automotive_icons_title p{
+  width: 10vw;
+  font-size: 0.9vw;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+}
+
+.fa-tools_title{
+  left: -4.5vw;
+}
+
+.fa-wind_title{
+  left: -1.2vw;
+}
+
+.fa-subway_title{
+  left: 2vw;
+}
+
+.fa-map-marker-alt_title{
+  left: 5vw;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+.container, .container4, .container6 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.button, .button4, .button6{
+  position: relative;
+  top: 100px;
+}
+
+.center, .center4, .center6 {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn, .btn4, .btn6 {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover, .btn4:hover, .btn6:hover {
+  transition: 1s ease-in-out;
+  background: #df0228;
+}
+
+.btn:hover svg, .btn4:hover svg, .btn6:hover svg{
+  stroke-dashoffset: -480;
+}
+
+.btn span, .btn4 span, .btn6 span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.container2, .container3, .container5, .container7, .container8, .container9 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.button2, .button3, .button5, .button7, .button8, .button9{
+  position: relative;
+  top: -250px;
+}
+
+.center2, .center3, .center5, .center7, .center8, .center9{
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn2, .btn3, .btn5, .btn7, .btn8, .btn9{
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn2:hover, .btn3:hover, .btn5:hover, .btn7:hover, .btn8:hover, .btn9:hover {
+  transition: 1s ease-in-out;
+  background: #003153;
+}
+
+.btn2:hover svg, .btn3:hover svg, .btn5:hover svg, .btn7:hover svg, .btn8:hover svg, .btn9:hover svg{
+  stroke-dashoffset: -480;
+}
+
+.btn2 span, .btn3 span, .btn5 span, .btn7 span, .btn8 span, .btn9 span{
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.spacer{
+  aspect-ratio: 300/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+
+.layer1{
+    background-image: url("./layer1.svg");
+    
+}
+
+.spacer2{
+  aspect-ratio: 300/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+
+.layer2{
+  background-image: url("./layer2.svg");
+  
+}
+
+.spacer3{
+  aspect-ratio: 1200/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer3{
+  background-image:  url("./layer3.svg");
+}
+
+.spacer4{
+  aspect-ratio: 2000/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.layer4{
+  background-image:  url("./layer4.svg");
+}
+
+.spacer5{
+  aspect-ratio: 1200/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer5{
+  background-image:  url("./layer5.svg");
+}
+
+.spacer6{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer6{
+  background-image:  url("./layer6.svg");
+}
+
+.spacer7{
+  aspect-ratio: 6000/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.layer7{
+  background-image:  url("./layer7.svg");
+
+}
+
+.spacer8{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer8{
+  background-image:  url("./layer8.svg");
+}
+
+.spacer9{
+  aspect-ratio: 6000/1080;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.layer9{
+  background-image:  url("./layer9.svg");
+
+}
+
+.spacer10{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer10{
+  background-image:  url("./layer10.svg");
+}
+
+.spacer11{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer11{
+  background-image:  url("./layer11.svg");
+}
+
+.spacer12{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.layer12{
+  background-image:  url("./layer12.svg");
+}
+
+.spacer13{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  
+}
+
+.layer13{
+  background-image:  url("./layer13.svg");
+}
+
+.spacer14{
+  aspect-ratio: 6000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.layer14{
+  background-image:  url("./layer14.svg");
+}
+
+.spacer15{
+  aspect-ratio: 2200/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.login_background_pic{
+  background-image: url("./login_background_pic.svg");
+}
+
+.spacer16{
+  aspect-ratio: 2200/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.layer16{
+  background-image: url("./login_background_pic.svg");
+}
+
+.spacer17{
+  aspect-ratio: 5000/1080;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.layer17{
+  background-image:  url("./layer17.svg");
+}
+
+li, a{
+  font-family: 'Poppins';
+  font-weight: 1000;
+  font-size: 16px;
+  color: #df0228;
+  text-decoration: none;
+
+  
+  
+}
+
+footer{
+  display: flex;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  
+}
+
+.logo{
+  height: 40px;
+  width: 266px;
+  padding: 30px 10px;
+  display: flex;
+  
+}
+
+.navlinks{
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+
+  
+}
+
+.Onas{
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  
+}
+
+.Vyroba{
+  padding-right: 15px;
+}
+
+.Zamestnanie{
+  padding-right: 15px;
+}
+
+.navlinks li{
+  display: flex;
+  justify-content: space-between;
+  display: inline-block;
+  
+  
+}
+
+
+.languagelinks li{
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  
+  
+}
+
+
+.slovakia-img{
+  display:flex;
+  
+
+}
+
+.england-img, .germany-img{
+  display: none;
+  
+}
+
+
+.navlinks li a{
+  transition: all 0.3s ease 0s;
+
+}
+
+
+.navlinks li a:hover{
+  color: #ffffff;
+  
+}
+ 
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+.england-img.show-england{
+  display: block;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 9px;
+  
+}
+
+.germany-img.show-germany{
+  display: block;
+  align-items: center;
+  position: relative;
+  left: 9px;
+}
+
+.social_bar{
+  width: 100%;
+  height: 8vh;
+  background-color: #a0001b;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_bar_title{
+  font-size: 3.5vw;
+  color: white;
+  position: relative;
+}
+
+.social_bar_icons a{
+  color: #ffffff;
+  font-size: 3.5vw;
+  position: relative;
+}
+
+.fa-facebook-square{
+  padding-left: 30px;
+}
+
+.fa-linkedin{
+  padding-left: 10px;
+}
+
+.fa-xing-square{
+  padding-left: 10px;
+}
+
+.fa-youtube{
+  padding-left: 10px;
+}
+
+
+.logo2{
+  color: white;
+  height: 2.5vw;
+  width: 16vw;
+}
+
+.logo3{
+  color: white;
+  height: 40px;
+  width: 250px;
+}
+
+.fa-facebook-square:hover, .fa-linkedin:hover, .fa-xing-square:hover, .fa-youtube:hover{
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: all 0.1s;
+}
+
+
+.intercable_quality{
+  height: 130vh;
+}
+
+.intercable_quality_title{
+  font-size: 5vw;
+  color: white;
+  position: relative;
+  
+  
+}
+
+.intercable_quality_baseline{
+  font-size: 2vw;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.intercable_quality_baseline2{
+  font-size: 1vw;
+  color: #ffffff;
+  width: 30vw;
+  position: relative;
+  
+}
+
+
+
+.intercable_quality_container{
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.intercable_quality_text{
+  margin-left: 100px;
+
+}
+
+
+
+.iso_img{
+  margin-right: 4vw;
+  width: 20vw;
+  height: 18vw;
+}
+
+
+.intercable_quality_pdfs a{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.intercable_quality_pdfs{
+  text-align: center;
+}
+
+
+.fa-file-pdf{
+  font-size: 2vw;
+  color: #df0228;
+}
+
+.intercable_quality_pdfs a{
+  padding: 1vw;
+  border: 1px solid #ffffff;
+  margin-bottom: 1.7vw;
+  
+}
+
+.intercable_quality_pdfs h1{
+  font-size: 1.5vw;
+}
+
+.intercable_quality_pdfs a:hover{
+  background-color: #003153;
+  transition: all 0.3s;
+}
+
+footer{
+  background-color: #a0001b;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_logo{
+  margin-left: 50px;
+}
+
+.footer_info{
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+  text-align: center;
+  
+}
+
+.footer_info a{
+  height: 2vw;
+  color: #ffffff;
+  font-size: 1.5vw;
+  margin-right: 1vw;
+  padding-right: 1vw;
+  border-right: 1px solid #ffffff;
+}
+
+.footer_info a:hover{
+  color: #c5c5c5;
+  transition: all 0.3s;
+}
+
+
+
+
+
+
+
+.automotive_section_text, .automotive_products_plastic_parts_text, .electrical_products_hand_tools_text, .electrical_products_stripping_tools_text, .electrical_products_cutting_tools_text, .electrical_products_crimping_tools_text, .electrical_products_bending_tools_text, .electrical_products_hydraulic_tools_text, .electrical_products_electrotechnical_tools_text, .wind_products_text, .wind_manufactured_products_text, .rail_products_text{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5vw;
+  margin-left: 110px;
+  
+}
+
+.automotive_section_title, .automotive_products_plastic_parts_title, .electrical_products_hand_tools_title, .electrical_products_stripping_tools_title, .electrical_products_cutting_tools_title, .electrical_products_crimping_tools_title, .electrical_products_bending_tools_title, .electrical_products_hydraulic_tools_title, .electrical_products_electrotechnical_tools_title, .wind_manufactured_products_title{
+  font-size: 7vw;
+  width: 42vw;
+  color: white;
+}
+
+.rail_products_title{
+  font-size: 5vw;
+  width: 42vw;
+  color: white;
+}
+
+.wind_products_title{
+  font-size: 4vw;
+  width: 42vw;
+  color: white;
+}
+
+.automotive_section_title2{
+  font-size: 2vw;
+  color: #ffffff;
+  width: 45vw;
+  position: relative;
+  
+}
+
+.automotiave_section_baseline, .automotive_products_plastic_parts_baseline, .wind_products_baseline, .rail_products_baseline{
+  font-size: 1vw;
+  color: #ffffff;
+  width: 36vw;
+}
+
+hr{
+  width: 150px;
+  margin: 30px;
+  margin-left: 0px;
+}
+
+.automotive_section_image img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: relative;
+  top: 80px;
+  
+}
+
+.wind_products_section_image{
+  position: relative;
+  top: 50px;
+}
+
+.automotive_products_plastic_parts_image, .rail_products_image{
+  position: relative;
+  top: 40px;
+}
+
+.automotive_section, .automotive_products_plastic_parts_section, .wind_products_section, .rail_products_section{
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.button3{
+  margin-left: 90px;
+  position: relative;
+  top: 120px;
+}
+
+
+.electrical_section_container, .automotive_products_connectors, .wind_products_container_certificate, .rail_products_anti_theft{
+  background-color: #a0001b;
+  height: 80vh;
+}
+
+.electrical_section_text, .automotive_products_connectors_text, .wind_products_certificate_text, .rail_products_anti_theft_text{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  width: 43vw;
+  margin-left: 9vw;
+  
+
+}
+
+.electrical_section_title, .automotive_products_connectors_title, .wind_products_certificate_title{
+  font-size: 5vw;
+  width: 37vw;
+}
+
+.rail_products_anti_theft_title{
+  font-size: 4vw;
+  width: 37vw;
+}
+
+.electrical_section_title2{
+  font-size: 2vw;
+  width: 37vw;
+  position: relative;
+}
+
+.electrical_section_baseline, .automotive_products_connectors_baseline, .wind_products_certificate_baseline, .rail_products_anti_theft_baseline{
+  font-size: 1vw;
+  width: 36vw;
+}
+
+.electrical_section, .automotive_products_connectors_section, .wind_products_certificate_section, .rail_products_anti_theft_section{
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.button4{
+  margin-left: 90px;
+  position: relative;
+  top: 70px;
+}
+
+.electrical_section_image img, .automotive_products_connectors_image img, .wind_products_certificate_image img, .rail_products_anti_theft_image img{
+  margin-left: 110px;
+}
+
+.windpower_section_container, .automotive_products_cable_ducts{
+  height: 100vh;
+}
+
+.rail_products_eye_ducts{
+  height: 90vh;
+}
+
+
+.windpower_section_text, .automotive_products_cable_ducts_text, .rail_products_eye_ducts_text{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 110px;
+  color: #ffffff;
+  top: -50px;
+}
+
+.windpower_section_title, .automotive_products_cable_ducts_title{
+  font-size: 5vw;
+  width: 45vw;
+}
+
+.rail_products_eye_ducts_title{
+  font-size: 4vw;
+  width: 45vw;
+}
+
+.windpower_section_title2{
+  font-size: 2vw;
+  width: 30vw;
+}
+
+.windpower_section_baseline, .automotive_products_cable_ducts_baseline, .rail_products_eye_ducts_baseline{
+  font-size: 1vw;
+  width: 36vw;
+}
+
+.button5{
+  margin-left: 90px;
+  position: relative;
+  top: 70px;
+}
+
+.windpower_section_image img{
+  position: relative;
+  top: 50px;
+  
+}
+
+.automotive_products_cable_ducts_image img, .rail_products_eye_ducts_image img{
+  position: relative;
+  top: -100px;
+}
+
+.windpower_section, .automotive_products_cable_ducts_section, .rail_products_eye_ducts_section{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 80px;
+
+}
+
+.rail_section_container{
+  background-color: #a0001b;
+  height: 80vh;
+}
+
+.rail_section_text{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  margin-left: 9vw;
+  top: -50px;
+}
+
+.rail_section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.rail_section_title{
+  font-size: 5vw;
+  width: 35vw;
+}
+
+.rail_section_title2{
+  font-size: 2vw;
+  width: 35vw;
+  position: relative;
+}
+
+.rail_section_baseline{
+  font-size: 1vw;
+  width: 36vw;
+}
+
+.button6{
+  margin-left: 90px;
+  position: relative;
+  top: 70px;
+}
+
+
+.rail_section_container{
+  display: flex;
+  flex-direction: row;
+}
+
+.rail_section_image img{
+  position: relative;
+  margin-left: 50px;
+}
+
+.location_section_container{
+  height: 100vh;
+}
+
+.location_section_text{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 110px;
+  color: #ffffff;
+  top: -50px;
+}
+
+.location_section_title{
+  font-size: 5vw;
+  width: 45vw;
+}
+
+.location_section_title2{
+  font-size: 2vw;
+  width: 30vw;
+}
+
+.location_section_baseline{
+  font-size: 1vw;
+  width: 36vw;
+}
+
+.button7{
+  margin-left: 90px;
+  position: relative;
+  top: 70px;
+}
+
+.location_section{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 30px;
+}
+
+
+
+.flex-card-wrapper {
+  width: 80%;
+  max-width: 50rem;
+  height: 50vh;
+  max-height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flex-card-wrapper .flex-card-container {
+  margin: 0 10px 0 0;
+  height: 100%;
+  width: 10%;
+  -webkit-transition: 450ms all ease-in-out;
+  transition: 450ms all ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flex-card-wrapper .flex-card-container.active {
+  width: 70%;
+}
+
+.flex-card-wrapper .flex-card-container.active .overlay h3, .flex-card-wrapper .flex-card-container.active .overlay p {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.flex-card-wrapper .flex-card-container.active .overlay .icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.flex-card-wrapper .flex-card-container.active .overlay .icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.flex-card-wrapper .flex-card-container.bild-1 {
+  background-image: url(https://www.intercable.sk/fileadmin/_processed_/a/8/csm_niederlassung_slowakei_c2d8e22612.jpg);
+}
+
+.flex-card-wrapper .flex-card-container.bild-2 {
+  background-image: url(https://www.intercable.sk/fileadmin/_processed_/1/e/csm_header_bruneck_hq_aa4f51fa3d.jpg);
+}
+
+.flex-card-wrapper .flex-card-container.bild-3 {
+  background-image: url(https://www.intercable.com/fileadmin/_processed_/9/9/csm_niederlassung_china_4ea1792f11.jpg);
+}
+
+.flex-card-wrapper .flex-card-container.bild-4 {
+  background-image: url(https://www.intercable.com/fileadmin/_processed_/e/b/csm_niederlassung_remscheid_e991ebc7c0.jpg);
+}
+
+.flex-card-wrapper .flex-card-container:last-child {
+  margin: 0 0 0 0;
+}
+
+.flex-card-wrapper .flex-card-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 9rem;
+  padding: 0 0 2rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  -webkit-transition: 450ms all ease-in-out;
+  transition: 450ms all ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.flex-card-wrapper .flex-card-container .overlay .icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #0c1016;
+  -webkit-transition: 450ms all ease-in-out;
+  transition: 450ms all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-card-wrapper .flex-card-container .overlay .fa-map-marker-alt {
+  color: #df0228;
+  font-size: 1vw;
+}
+
+.flex-card-wrapper .flex-card-container .overlay h3 {
+  top: 4.4vw;
+  font-size: 1.8rem;
+  -webkit-transition: 350ms 200ms all ease-in-out;
+  transition: 350ms 200ms all ease-in-out;
+}
+
+.flex-card-wrapper .flex-card-container .overlay p {
+  top: 3rem;
+  font-size: 1.2rem;
+  -webkit-transition: 350ms 300ms all ease-in-out;
+  transition: 350ms 300ms all ease-in-out;
+}
+
+.flex-card-wrapper .flex-card-container .overlay h3, .flex-card-wrapper .flex-card-container .overlay p {
+  color: white;
+  position: absolute;
+  left: 9rem;
+  width: 20rem;
+  opacity: 0;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
+
+.zamestnanie_uvod, .onas_uvod{
+  height: 60vh;
+}
+
+.onas_uvod{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.zamestanie_uvod_text, .onas_uvod_text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 35vw;
+  margin-top: 100px;
+  
+}
+
+.zamestanie_uvod_title, .onas_uvod_title{
+  color: white;
+  font-size: 3.5vw;
+  width: 35vw;
+}
+
+.zamestanie_uvod_baseline, .onas_uvod_baseline{
+  color: white;
+  font-size: 1vw;
+  width: 30vw;
+  margin-left: 30px;
+}
+
+.zamestnanie_uvod_buttons{
+  margin-left: 100px;
+  position: relative;
+  margin-top: 350px;
+  
+}
+
+.button8{
+  position: relative;
+
+}
+
+.button9{
+  position: relative;
+  left: 200px;
+  
+}
+
+.zamestnanie_vyhody, .zamestnanie_vyhody_specialne_prilezitosti, .zamestnanie_vyhody_benefity{
+  height: 35vh;
+  background-color: #a0001b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.zamestanie_uvod_baseline li, .zamestanie_vyhody_specialne_prilezitosti_baseline li, .zamestnanie_vyhody_benefity_baseline li{
+  font-size: 1vw;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.zamestnanie_vyhody_title, .zamestnanie_vyhody_specialne_prilezitosti_title, .zamestnanie_vyhody_benefity_title{
+  color: white;
+  font-size: 3vw;
+  padding-bottom: 30px;
+}
+
+.zamestnanie_vyhody_text, .zamestnanie_vyhody_benefity_text {
+  margin-right: 500px;
+  margin-top: 30px;
+  
+}
+
+.zamestnanie_vyhody_img, .zamestnanie_vyhody_specialne_prilezitosti_img, .zamestnanie_vyhody_benefity_img, .zamestnanie_uvod_img{
+  height: 15vw;
+  width: 23vw;
+  margin-left: 100px;
+}
+
+.zamestnanie_vyhody_vyhody_hr, .zamestnanie_vyhody_specialne_prilezitosti_hr, .zamestnanie_vyhody_benefity_hr{
+  width: 0px;
+  height: 12vw;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.zamestnanie_vyhody_specialne_prilezitosti{
+  background-color: #001220;
+}
+
+.zamestnanie_vyhody_specialne_prilezitosti_img, .zamestnanie_uvod_img{
+  margin-left: 0px;
+  margin-right: 100px;
+}
+
+.zamestnanie_vyhody_specialne_prilezitosti_text{
+  margin-left: 500px;
+  margin-top: 30px;
+  
+}
+
+.zamestnanie_vyhody_benefity_baseline{
+  margin-left: 30px;
+}
+
+.zamestanie_vyhody_specialne_prilezitosti_baseline{
+  margin-left: 30px;
+}
+
+.ziadost_o_zamestnanie{
+  height: 400vh;
+}
+
+.ziadost_o_zamestnanie_text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 35vw;
+  margin-left: 30vw;
+  
+}
+
+.ziadost_o_zamestnanie_title{
+  font-size: 5vw;
+  
+}
+
+.pracovne_ponuky_link{
+  color: #ffffff;
+}
+
+.pracovne_ponuky_link:hover{
+  color: #a0001b;
+  transition: all 0.3s;
+}
+
+.fa-arrow-down{
+  color: rgb(223, 2, 40);
+  font-size: 10vw;
+  margin-top: 150px;
+  margin-bottom: 400px;
+}
+
+.Login a{
+  color: #ffffff;
+  padding: 0.3em 1em;
+  border-radius: 3em;
+  font-weight: normal;
+  font-size: 14px;
+  background: -webkit-linear-gradient(right, #df0228, #790014, #df0228, #790014);
+  background: -o-linear-gradient(right, #df0228, #790014, #df0228, #790014);
+  background: -moz-linear-gradient(right, #df0228, #790014, #df0228, #790014);
+  background: linear-gradient(right, #df0228, #790014, #df0228, #790014);
+  
+}
+
+.automotive_products_cable_ducts{
+  height: 120vh;
+}
+
+.electrical_products_hand_tools{
+  height: 200vh;
+  
+}
+
+
+.electrical_products_stripping_tools, .electrical_products_crimping_tools, .electrical_products_electrotechnical_tools{
+  height: 140vh;
+}
+
+.electrical_products_cutting_tools{
+  height: 260vh;
+}
+
+.electrical_products_bending_tools{
+  height: 280vh;
+}
+
+.electrical_products_hydraulic_tools{
+  height: 190vh;
+}
+
+.wind_manufactured_products{
+  height: 260vh;
+}
+
+.electrical_products_hand_tools_section, .electrical_products_stripping_tools_section, .electrical_products_cutting_tools_section, .electrical_products_crimping_tools_section, .electrical_products_bending_tools_section, .electrical_products_hydraulic_tools_section, .electrical_products_electrotechnical_tools_section, .wind_manufactured_products_section{
+  display: flex;
+  flex-direction: column;
+}
+
+.electrical_products_hand_tools_text, .electrical_products_stripping_tools_text, .electrical_products_cutting_tools_text, .electrical_products_crimping_tools_text, .electrical_products_bending_tools_text, .electrical_products_hydraulic_tools_text, .electrical_products_electrotechnical_tools_text, .wind_manufactured_products_text{
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin-left: 0px;
+  
+}
+
+.electrical_products_hand_tools_title, .electrical_products_stripping_tools_title, .electrical_products_cutting_tools_title, .electrical_products_crimping_tools_title, .electrical_products_bending_tools_title, .electrical_products_hydraulic_tools_title, .wind_manufactured_products_title{
+  font-size: 5vw;
+  width: 42vw;
+}
+
+.col1, .col2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+
+.electrical_products_hand_tools_boxes img{
+  height: 13vw;
+  width: 24vw;
+  
+}
+
+.electrical_products_hand_tools_boxes hr{
+  width: 10vw;
+  margin: 2vw;
+  margin-left: 7vw;
+  
+}
+
+.electrical_products_hand_tools_boxes h1{
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  font-size: 2vw;
+  margin-top: 50px;
+  
+}
+
+
+
+
+.col1 div, .col2 div{
+  padding: 40px 10px 100px 10px;
+  border: 1px solid #ffffff;
+  margin-top: 120px;
+}
+
+.electrical_products_hand_tools_boxes{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.electrical_products_stripping_tools, .electrical_products_crimping_tools, .electrical_products_hydraulic_tools{
+  background-color: #a0001b;
+}
+
